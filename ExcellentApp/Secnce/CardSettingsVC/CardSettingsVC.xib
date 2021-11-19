@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdsSettingsVC" customModule="ExcellentApp" customModuleProvider="target">
+            <connections>
+                <outlet property="contianerView" destination="wXc-wf-8Tv" id="Ukh-W1-aSI"/>
+                <outlet property="deleteBtn" destination="FK4-JZ-NBj" id="4f0-eI-lPd"/>
+                <outlet property="dismissButton" destination="vzx-03-6mt" id="FJH-be-XBU"/>
+                <outlet property="editBtn" destination="JeH-RC-B3W" id="YaO-Dt-NtT"/>
+                <outlet property="view" destination="bls-Oa-UDJ" id="xIR-rB-moK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="bls-Oa-UDJ">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzx-03-6mt">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wXc-wf-8Tv">
+                    <rect key="frame" x="52" y="376.5" width="310.5" height="143"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="m1t-L0-iKG">
+                            <rect key="frame" x="16" y="22" width="278.5" height="99"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JeH-RC-B3W" customClass="mainButton" customModule="ExcellentApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="278.5" height="45"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                                    <state key="normal" title="Login ">
+                                        <color key="titleColor" name="7966FD"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FK4-JZ-NBj" customClass="mainButton" customModule="ExcellentApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="54" width="278.5" height="45"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                                    <state key="normal" title="Login ">
+                                        <color key="titleColor" name="7966FD"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="m1t-L0-iKG" firstAttribute="centerX" secondItem="wXc-wf-8Tv" secondAttribute="centerX" id="1PI-Id-hup"/>
+                        <constraint firstItem="m1t-L0-iKG" firstAttribute="leading" secondItem="wXc-wf-8Tv" secondAttribute="leading" constant="16" id="8SQ-NX-sFP"/>
+                        <constraint firstItem="m1t-L0-iKG" firstAttribute="top" secondItem="wXc-wf-8Tv" secondAttribute="top" constant="22" id="9ou-R6-Hka"/>
+                        <constraint firstAttribute="bottom" secondItem="m1t-L0-iKG" secondAttribute="bottom" constant="22" id="Cdi-2G-ynL"/>
+                        <constraint firstItem="m1t-L0-iKG" firstAttribute="centerY" secondItem="wXc-wf-8Tv" secondAttribute="centerY" id="IgE-cW-9S5"/>
+                        <constraint firstAttribute="trailing" secondItem="m1t-L0-iKG" secondAttribute="trailing" constant="16" id="jxT-1A-vxL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="kdl-n5-quF"/>
+            <color key="backgroundColor" white="0.0" alpha="0.44810038530000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wXc-wf-8Tv" firstAttribute="centerY" secondItem="bls-Oa-UDJ" secondAttribute="centerY" id="2J8-VO-q3s"/>
+                <constraint firstItem="wXc-wf-8Tv" firstAttribute="centerX" secondItem="bls-Oa-UDJ" secondAttribute="centerX" id="Chb-Iu-jtt"/>
+                <constraint firstItem="vzx-03-6mt" firstAttribute="leading" secondItem="kdl-n5-quF" secondAttribute="leading" id="KkO-EQ-0UZ"/>
+                <constraint firstItem="wXc-wf-8Tv" firstAttribute="width" secondItem="bls-Oa-UDJ" secondAttribute="width" multiplier="0.75" id="MJb-wU-nr9"/>
+                <constraint firstItem="vzx-03-6mt" firstAttribute="top" secondItem="kdl-n5-quF" secondAttribute="top" id="cxW-Ms-N4m"/>
+                <constraint firstItem="kdl-n5-quF" firstAttribute="trailing" secondItem="vzx-03-6mt" secondAttribute="trailing" id="kZA-WB-x43"/>
+                <constraint firstItem="wXc-wf-8Tv" firstAttribute="height" secondItem="bls-Oa-UDJ" secondAttribute="height" multiplier="0.16" id="pcp-7l-ros"/>
+                <constraint firstItem="kdl-n5-quF" firstAttribute="bottom" secondItem="vzx-03-6mt" secondAttribute="bottom" id="uab-ld-mZu"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="103.79464285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="7966FD">
+            <color red="0.47499999403953552" green="0.40000000596046448" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

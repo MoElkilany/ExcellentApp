@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StatisticsVC" customModule="ExcellentApp" customModuleProvider="target">
+            <connections>
+                <outlet property="statisticsCollection" destination="SpR-2H-wm7" id="Agg-y0-aOz"/>
+                <outlet property="titleBar" destination="PtI-pW-aXN" id="dkD-AJ-vIn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="SpR-2H-wm7">
+                    <rect key="frame" x="16" y="122" width="382" height="740"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="szy-Jh-Pyn">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RJ2-u4-8SU" customClass="shadowViewWithoutCorner" customModule="ExcellentApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8Sm-E7-n9f">
+                            <rect key="frame" x="187.5" y="55" width="39" height="42"/>
+                            <subviews>
+                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PtI-pW-aXN">
+                                    <rect key="frame" x="0.0" y="0.0" width="39" height="42"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="16"/>
+                                    <state key="normal" title="Tasks">
+                                        <color key="titleColor" name="7966FD"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RrD-xN-7rt">
+                            <rect key="frame" x="355" y="65" width="47" height="22"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1B-mI-KBI">
+                                    <rect key="frame" x="0.0" y="0.0" width="47" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="34" id="1tf-ko-8le"/>
+                                        <constraint firstAttribute="width" constant="47" id="h6p-cL-6E4"/>
+                                    </constraints>
+                                    <state key="normal" image="notification"/>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="RrD-xN-7rt" secondAttribute="trailing" constant="12" id="0H8-Cm-scl"/>
+                        <constraint firstItem="8Sm-E7-n9f" firstAttribute="top" secondItem="RJ2-u4-8SU" secondAttribute="top" constant="55" id="4Y3-Vm-WKg"/>
+                        <constraint firstItem="RrD-xN-7rt" firstAttribute="centerY" secondItem="8Sm-E7-n9f" secondAttribute="centerY" id="9Jg-Zb-Cp2"/>
+                        <constraint firstAttribute="height" constant="100" id="Xef-45-QyL"/>
+                        <constraint firstItem="8Sm-E7-n9f" firstAttribute="centerX" secondItem="RJ2-u4-8SU" secondAttribute="centerX" id="gBG-SD-nrl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SpR-2H-wm7" secondAttribute="trailing" constant="16" id="1zt-2E-cnf"/>
+                <constraint firstItem="RJ2-u4-8SU" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="E2d-Z2-0QB"/>
+                <constraint firstItem="SpR-2H-wm7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="UhQ-aM-MV4"/>
+                <constraint firstItem="RJ2-u4-8SU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="XcL-dA-2fi"/>
+                <constraint firstItem="RJ2-u4-8SU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ltI-tl-3Yz"/>
+                <constraint firstItem="SpR-2H-wm7" firstAttribute="top" secondItem="RJ2-u4-8SU" secondAttribute="bottom" constant="22" id="mRU-IO-YoL"/>
+                <constraint firstItem="SpR-2H-wm7" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="woF-3M-Xma"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="106.47321428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="notification" width="22" height="22"/>
+        <namedColor name="7966FD">
+            <color red="0.47499999403953552" green="0.40000000596046448" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="112" id="KGk-i7-Jjw" customClass="ChildHomeCell" customModule="ExcellentApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="112"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gT4-Lm-ERm" customClass="shadowView" customModule="ExcellentApp" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="352" height="85"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="childPrayer" translatesAutoresizingMaskIntoConstraints="NO" id="Ko2-hK-5mz">
+                                <rect key="frame" x="12" y="4" width="95" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="nbU-fB-isn"/>
+                                    <constraint firstAttribute="width" constant="95" id="xmV-RR-Vpe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Jj-b8-3tY">
+                                <rect key="frame" x="119" y="25" width="132" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JBN-1e-cxv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                <color key="textColor" name="EA6903"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="curveView" translatesAutoresizingMaskIntoConstraints="NO" id="Eac-3t-c9u">
+                                <rect key="frame" x="259" y="0.0" width="93" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="pwx-xE-JjJ"/>
+                                    <constraint firstAttribute="width" constant="93" id="raF-UT-qlC"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="Y9y-mR-iwu">
+                                <rect key="frame" x="319" y="13" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="JBl-CD-8zR"/>
+                                    <constraint firstAttribute="height" constant="20" id="qjs-RF-gBa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJc-CK-gx0">
+                                <rect key="frame" x="268" y="11" width="45" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="5mm-hU-77f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="middel" translatesAutoresizingMaskIntoConstraints="NO" id="H2H-Hb-tvx">
+                                <rect key="frame" x="282" y="48" width="47" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="QFd-EN-51a"/>
+                                    <constraint firstAttribute="height" constant="35" id="S3W-XV-Hol"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Eac-3t-c9u" firstAttribute="top" secondItem="gT4-Lm-ERm" secondAttribute="top" id="3y2-FA-ghV"/>
+                            <constraint firstItem="Ko2-hK-5mz" firstAttribute="centerY" secondItem="gT4-Lm-ERm" secondAttribute="centerY" id="8ZX-D9-KD0"/>
+                            <constraint firstItem="Ko2-hK-5mz" firstAttribute="leading" secondItem="gT4-Lm-ERm" secondAttribute="leading" constant="12" id="BIE-Lj-qDQ"/>
+                            <constraint firstItem="H2H-Hb-tvx" firstAttribute="top" secondItem="Eac-3t-c9u" secondAttribute="bottom" constant="2" id="CTc-2I-sAd"/>
+                            <constraint firstAttribute="trailing" secondItem="Y9y-mR-iwu" secondAttribute="trailing" constant="13" id="Jcx-Jj-tEn"/>
+                            <constraint firstItem="Y9y-mR-iwu" firstAttribute="leading" secondItem="BJc-CK-gx0" secondAttribute="trailing" constant="6" id="M2G-bV-qiV"/>
+                            <constraint firstAttribute="trailing" secondItem="H2H-Hb-tvx" secondAttribute="trailing" constant="23" id="TYO-PZ-Koc"/>
+                            <constraint firstAttribute="trailing" secondItem="Eac-3t-c9u" secondAttribute="trailing" id="Uol-M0-fzp"/>
+                            <constraint firstItem="BJc-CK-gx0" firstAttribute="top" secondItem="gT4-Lm-ERm" secondAttribute="top" constant="11" id="Voh-af-GCJ"/>
+                            <constraint firstItem="BJc-CK-gx0" firstAttribute="leading" secondItem="8Jj-b8-3tY" secondAttribute="trailing" constant="17" id="Zi3-1W-1WN"/>
+                            <constraint firstItem="8Jj-b8-3tY" firstAttribute="leading" secondItem="Ko2-hK-5mz" secondAttribute="trailing" constant="12" id="b6n-gv-d6k"/>
+                            <constraint firstItem="Y9y-mR-iwu" firstAttribute="centerY" secondItem="Eac-3t-c9u" secondAttribute="centerY" id="ksp-FU-viu"/>
+                            <constraint firstItem="Eac-3t-c9u" firstAttribute="leading" secondItem="8Jj-b8-3tY" secondAttribute="trailing" constant="8" symbolic="YES" id="qE2-Oh-cOR"/>
+                            <constraint firstAttribute="height" constant="85" id="sko-cT-XI2"/>
+                            <constraint firstItem="8Jj-b8-3tY" firstAttribute="top" secondItem="gT4-Lm-ERm" secondAttribute="top" constant="25" id="yek-UB-vsS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gT4-Lm-ERm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="70E-Em-JOg"/>
+                    <constraint firstItem="gT4-Lm-ERm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="KSX-fE-Kam"/>
+                    <constraint firstAttribute="bottom" secondItem="gT4-Lm-ERm" secondAttribute="bottom" constant="8" id="QXh-hx-r3o"/>
+                    <constraint firstAttribute="trailing" secondItem="gT4-Lm-ERm" secondAttribute="trailing" constant="8" id="UVM-Yj-N4K"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="rewardIImge" destination="H2H-Hb-tvx" id="b8z-zH-7Lb"/>
+                <outlet property="starCount" destination="BJc-CK-gx0" id="kXX-OG-erz"/>
+                <outlet property="title" destination="8Jj-b8-3tY" id="R8Z-c8-Wch"/>
+            </connections>
+            <point key="canvasLocation" x="166.66666666666669" y="119.86607142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="childPrayer" width="80" height="80"/>
+        <image name="curveView" width="57" height="21"/>
+        <image name="middel" width="62" height="62"/>
+        <image name="star" width="17" height="17"/>
+        <namedColor name="EA6903">
+            <color red="0.9179999828338623" green="0.41200000047683716" blue="0.012000000104308128" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

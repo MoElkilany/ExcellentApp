@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangeLanguageChildVC" customModule="ExcellentApp" customModuleProvider="target">
+            <connections>
+                <outlet property="changeLang" destination="7P1-at-KGD" id="WZG-Us-loS"/>
+                <outlet property="langValue" destination="AZP-5L-2c0" id="3Dl-9E-AED"/>
+                <outlet property="navLang" destination="FvC-88-c6x" id="ZKa-zn-1k1"/>
+                <outlet property="theLang" destination="Ska-fV-cwq" id="Xrl-BQ-uEb"/>
+                <outlet property="view" destination="TY5-kf-Lpd" id="9aN-lJ-wCN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="TY5-kf-Lpd">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can change the application language" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7P1-at-KGD">
+                    <rect key="frame" x="16" y="144" width="276" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="Zbz-kk-bP1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="15"/>
+                    <color key="textColor" name="0C0A19"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="the Language" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ska-fV-cwq">
+                    <rect key="frame" x="16" y="212" width="92" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="k4n-kz-mX3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="15"/>
+                    <color key="textColor" name="7966FD"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c79-ub-ypG" customClass="shadowView" customModule="ExcellentApp" customModuleProvider="target">
+                    <rect key="frame" x="16" y="273" width="382" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arabic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZP-5L-2c0">
+                            <rect key="frame" x="16" y="12" width="43.5" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="EqT-KK-NuU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="15"/>
+                            <color key="textColor" name="0C0A19"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon color" translatesAutoresizingMaskIntoConstraints="NO" id="2sC-qg-FPb">
+                            <rect key="frame" x="358" y="21" width="16" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="7ZO-sB-qO6"/>
+                                <constraint firstAttribute="height" constant="18" id="oJ1-Up-N4G"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9R-d4-w0a">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="60"/>
+                            <connections>
+                                <action selector="chooseLang:" destination="-1" eventType="touchUpInside" id="Cqf-vE-eDK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="AZP-5L-2c0" firstAttribute="leading" secondItem="c79-ub-ypG" secondAttribute="leading" constant="16" id="0FV-fu-Ytj"/>
+                        <constraint firstAttribute="trailing" secondItem="c9R-d4-w0a" secondAttribute="trailing" id="32Y-I4-o8p"/>
+                        <constraint firstItem="2sC-qg-FPb" firstAttribute="centerY" secondItem="c79-ub-ypG" secondAttribute="centerY" id="6xj-GV-IJC"/>
+                        <constraint firstAttribute="height" constant="60" id="8LC-Kb-MYs"/>
+                        <constraint firstItem="c9R-d4-w0a" firstAttribute="leading" secondItem="c79-ub-ypG" secondAttribute="leading" id="AEX-G2-8tv"/>
+                        <constraint firstItem="AZP-5L-2c0" firstAttribute="centerY" secondItem="c79-ub-ypG" secondAttribute="centerY" id="P7X-km-II5"/>
+                        <constraint firstAttribute="trailing" secondItem="2sC-qg-FPb" secondAttribute="trailing" constant="8" id="c42-To-yKT"/>
+                        <constraint firstAttribute="bottom" secondItem="c9R-d4-w0a" secondAttribute="bottom" id="eqF-zS-Dna"/>
+                        <constraint firstItem="c9R-d4-w0a" firstAttribute="top" secondItem="c79-ub-ypG" secondAttribute="top" id="kz4-0W-4xE"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LanguageImage" translatesAutoresizingMaskIntoConstraints="NO" id="ZPb-ze-BkN">
+                    <rect key="frame" x="0.0" y="615" width="414" height="281"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="404" id="odU-DB-Wxf"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="570-wv-nUz" customClass="shadowViewWithoutCorner" customModule="ExcellentApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QcL-bT-ReP">
+                            <rect key="frame" x="16" y="60" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="Uk7-l4-Bsu"/>
+                                <constraint firstAttribute="height" constant="30" id="kIY-Ac-osN"/>
+                            </constraints>
+                            <state key="normal" image="arrowsright"/>
+                            <connections>
+                                <action selector="dismiss:" destination="-1" eventType="touchUpInside" id="214-6Z-oOS"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FvC-88-c6x">
+                            <rect key="frame" x="78" y="57" width="258" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="cyv-zO-geR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="15"/>
+                            <color key="textColor" name="7966FD"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="FvC-88-c6x" firstAttribute="leading" secondItem="QcL-bT-ReP" secondAttribute="trailing" constant="32" id="DWa-Uc-4HZ"/>
+                        <constraint firstItem="FvC-88-c6x" firstAttribute="top" secondItem="570-wv-nUz" secondAttribute="top" constant="57" id="FIE-9C-f9X"/>
+                        <constraint firstItem="QcL-bT-ReP" firstAttribute="top" secondItem="570-wv-nUz" secondAttribute="top" constant="60" id="Quz-PI-gDb"/>
+                        <constraint firstItem="FvC-88-c6x" firstAttribute="centerX" secondItem="570-wv-nUz" secondAttribute="centerX" id="UI1-JG-BVq"/>
+                        <constraint firstAttribute="height" constant="100" id="ZWz-qt-jOu"/>
+                        <constraint firstItem="QcL-bT-ReP" firstAttribute="leading" secondItem="570-wv-nUz" secondAttribute="leading" constant="16" id="gV9-1Z-BdP"/>
+                        <constraint firstItem="FvC-88-c6x" firstAttribute="centerY" secondItem="QcL-bT-ReP" secondAttribute="centerY" id="iAh-2F-atI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="QXl-Qf-dUO"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="7P1-at-KGD" firstAttribute="leading" secondItem="QXl-Qf-dUO" secondAttribute="leading" constant="16" id="1sY-kC-nEZ"/>
+                <constraint firstItem="ZPb-ze-BkN" firstAttribute="trailing" secondItem="QXl-Qf-dUO" secondAttribute="trailing" id="6ui-jR-sDG"/>
+                <constraint firstItem="570-wv-nUz" firstAttribute="top" secondItem="TY5-kf-Lpd" secondAttribute="top" id="87B-T9-Pjl"/>
+                <constraint firstAttribute="bottom" secondItem="ZPb-ze-BkN" secondAttribute="bottom" id="9gT-0y-TEi"/>
+                <constraint firstItem="QXl-Qf-dUO" firstAttribute="trailing" secondItem="c79-ub-ypG" secondAttribute="trailing" constant="16" id="Bkf-J7-XRY"/>
+                <constraint firstItem="Ska-fV-cwq" firstAttribute="top" secondItem="7P1-at-KGD" secondAttribute="bottom" constant="32" id="C9g-Bt-jSc"/>
+                <constraint firstItem="c79-ub-ypG" firstAttribute="top" secondItem="Ska-fV-cwq" secondAttribute="bottom" constant="25" id="Fsg-8I-JTe"/>
+                <constraint firstItem="ZPb-ze-BkN" firstAttribute="leading" secondItem="QXl-Qf-dUO" secondAttribute="leading" id="NqG-4W-CsD"/>
+                <constraint firstItem="570-wv-nUz" firstAttribute="trailing" secondItem="QXl-Qf-dUO" secondAttribute="trailing" id="TRE-gV-MBC"/>
+                <constraint firstItem="c79-ub-ypG" firstAttribute="leading" secondItem="QXl-Qf-dUO" secondAttribute="leading" constant="16" id="aZQ-BJ-3HT"/>
+                <constraint firstItem="570-wv-nUz" firstAttribute="leading" secondItem="QXl-Qf-dUO" secondAttribute="leading" id="fS8-Y8-yOB"/>
+                <constraint firstItem="Ska-fV-cwq" firstAttribute="leading" secondItem="QXl-Qf-dUO" secondAttribute="leading" constant="16" id="jX8-FP-gZj"/>
+                <constraint firstItem="7P1-at-KGD" firstAttribute="top" secondItem="570-wv-nUz" secondAttribute="bottom" constant="44" id="t7X-Li-vKq"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="114.50892857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Icon color" width="9" height="5"/>
+        <image name="LanguageImage" width="374" height="281"/>
+        <image name="arrowsright" width="24" height="24"/>
+        <namedColor name="0C0A19">
+            <color red="0.046999998390674591" green="0.039000000804662704" blue="0.097999997437000275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="7966FD">
+            <color red="0.47499999403953552" green="0.40000000596046448" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

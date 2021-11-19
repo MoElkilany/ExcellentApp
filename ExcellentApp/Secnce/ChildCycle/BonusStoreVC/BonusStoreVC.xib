@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BonusStoreVC" customModule="ExcellentApp" customModuleProvider="target">
+            <connections>
+                <outlet property="blureImage" destination="04J-kD-iR4" id="iF7-8p-uYd"/>
+                <outlet property="bonusStoreTable" destination="Tbq-ch-Ioc" id="KlC-yI-VMC"/>
+                <outlet property="view" destination="ngA-L7-yQ6" id="ZhA-Nw-8I0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ngA-L7-yQ6">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="color" translatesAutoresizingMaskIntoConstraints="NO" id="04J-kD-iR4">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="QO1-U2-6fG"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VLJ-QQ-xke">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bigPackge" translatesAutoresizingMaskIntoConstraints="NO" id="NxC-Ym-z5U">
+                            <rect key="frame" x="157" y="75" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="OU5-gw-ILJ"/>
+                                <constraint firstAttribute="width" constant="100" id="rIs-Gi-Qcg"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.70269671590000005" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="NxC-Ym-z5U" firstAttribute="centerY" secondItem="VLJ-QQ-xke" secondAttribute="centerY" id="0hA-9Y-Yst"/>
+                        <constraint firstItem="NxC-Ym-z5U" firstAttribute="centerX" secondItem="VLJ-QQ-xke" secondAttribute="centerX" id="Iq4-yE-uta"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tbq-ch-Ioc">
+                    <rect key="frame" x="16" y="191" width="382" height="681"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="lnJ-fG-Jr0"/>
+            <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Tbq-ch-Ioc" firstAttribute="top" secondItem="lnJ-fG-Jr0" secondAttribute="top" constant="191" id="3kf-Kp-IQS"/>
+                <constraint firstItem="VLJ-QQ-xke" firstAttribute="leading" secondItem="04J-kD-iR4" secondAttribute="leading" id="7ml-D9-hAV"/>
+                <constraint firstItem="04J-kD-iR4" firstAttribute="trailing" secondItem="lnJ-fG-Jr0" secondAttribute="trailing" id="CiR-Zm-cVf"/>
+                <constraint firstItem="VLJ-QQ-xke" firstAttribute="trailing" secondItem="04J-kD-iR4" secondAttribute="trailing" id="FU4-mt-b1d"/>
+                <constraint firstItem="Tbq-ch-Ioc" firstAttribute="leading" secondItem="lnJ-fG-Jr0" secondAttribute="leading" constant="16" id="Jwl-Fj-Fjs"/>
+                <constraint firstItem="04J-kD-iR4" firstAttribute="top" secondItem="lnJ-fG-Jr0" secondAttribute="top" id="OaT-pL-JOB"/>
+                <constraint firstItem="lnJ-fG-Jr0" firstAttribute="trailing" secondItem="Tbq-ch-Ioc" secondAttribute="trailing" constant="16" id="UeH-9m-qPv"/>
+                <constraint firstItem="VLJ-QQ-xke" firstAttribute="top" secondItem="04J-kD-iR4" secondAttribute="top" id="hiJ-pt-pRV"/>
+                <constraint firstItem="04J-kD-iR4" firstAttribute="leading" secondItem="lnJ-fG-Jr0" secondAttribute="leading" id="mfg-kx-fCp"/>
+                <constraint firstItem="VLJ-QQ-xke" firstAttribute="bottom" secondItem="04J-kD-iR4" secondAttribute="bottom" id="qa8-zn-Nvo"/>
+                <constraint firstItem="lnJ-fG-Jr0" firstAttribute="bottom" secondItem="Tbq-ch-Ioc" secondAttribute="bottom" constant="24" id="wX2-J2-4Bk"/>
+            </constraints>
+            <point key="canvasLocation" x="100.00000000000001" y="109.82142857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bigPackge" width="114" height="114"/>
+        <image name="color" width="343" height="148"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

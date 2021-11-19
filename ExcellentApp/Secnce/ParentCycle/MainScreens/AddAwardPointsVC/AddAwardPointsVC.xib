@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddAwardPointsVC" customModule="ExcellentApp" customModuleProvider="target">
+            <connections>
+                <outlet property="awardBtn" destination="Vzd-KO-V6d" id="xsM-c9-9ki"/>
+                <outlet property="awardPointLab" destination="lpB-aI-TPz" id="nrm-pf-YuO"/>
+                <outlet property="backBtn" destination="Why-cP-Kj3" id="iUU-Jf-LJL"/>
+                <outlet property="balanceCount" destination="Mtf-VR-L4N" id="B15-jy-rCR"/>
+                <outlet property="balanceView" destination="7Wb-rX-CLS" id="RRs-Gs-SUF"/>
+                <outlet property="filterNameLab" destination="YNx-Lz-4gB" id="6PL-mx-6G0"/>
+                <outlet property="numberOfPointsLab" destination="yhL-1Z-BhF" id="lwY-K3-FoN"/>
+                <outlet property="numberOfPointsTF" destination="Eid-yM-vvR" id="mfX-2j-OB9"/>
+                <outlet property="numberOfPointsValidationLab" destination="sbp-qx-6eq" id="Spt-Yx-Y1C"/>
+                <outlet property="previousAwardLab" destination="1d8-dG-5h0" id="DV1-5d-fqL"/>
+                <outlet property="previousTable" destination="VZy-kf-1Gk" id="tQZ-h8-EnJ"/>
+                <outlet property="reasonOfAwardPointLab" destination="V0o-Kk-kCD" id="OzL-VB-dKm"/>
+                <outlet property="reasonOfAwardPointTF" destination="N0x-3t-nEE" id="pIA-fD-2Bb"/>
+                <outlet property="reasonOfAwardPointValidationLab" destination="H19-OK-Fui" id="Cum-3q-cXB"/>
+                <outlet property="selectChildLab" destination="tAd-Uu-G4g" id="tVD-2i-7M2"/>
+                <outlet property="selectChildTF" destination="eG0-L4-Z6B" id="B8h-1t-Jh6"/>
+                <outlet property="selectChildValidationLab" destination="dcu-nY-V8H" id="cwG-nu-xM5"/>
+                <outlet property="view" destination="kiH-Mg-5nY" id="pkA-HM-Y8A"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="kiH-Mg-5nY">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="cR6-mh-KBM">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lRu-E7-bnq">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1007"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="at1-1H-4GK" customClass="shadowViewWithoutCorner" customModule="ExcellentApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Why-cP-Kj3">
+                                            <rect key="frame" x="16" y="60" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="aHk-VO-VCt"/>
+                                                <constraint firstAttribute="width" constant="30" id="dxE-3A-Kxz"/>
+                                            </constraints>
+                                            <state key="normal" image="arrowsright"/>
+                                            <connections>
+                                                <action selector="backAction:" destination="-1" eventType="touchUpInside" id="R49-Hs-rTa"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpB-aI-TPz">
+                                            <rect key="frame" x="174" y="57" width="66.5" height="36"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="36" id="nBi-Le-4dT"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="15"/>
+                                            <color key="textColor" name="7966FD"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Wb-rX-CLS">
+                                            <rect key="frame" x="308" y="60" width="90" height="30"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mtf-VR-L4N">
+                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
+                                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="13"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="C01565"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="4IC-xz-LbP"/>
+                                                <constraint firstAttribute="width" constant="90" id="8Gy-8x-lGh"/>
+                                                <constraint firstAttribute="bottom" secondItem="Mtf-VR-L4N" secondAttribute="bottom" id="H2K-TA-cZs"/>
+                                                <constraint firstItem="Mtf-VR-L4N" firstAttribute="top" secondItem="7Wb-rX-CLS" secondAttribute="top" id="ls6-t6-yyC"/>
+                                                <constraint firstItem="Mtf-VR-L4N" firstAttribute="leading" secondItem="7Wb-rX-CLS" secondAttribute="leading" id="rIn-Ys-ZBd"/>
+                                                <constraint firstAttribute="trailing" secondItem="Mtf-VR-L4N" secondAttribute="trailing" id="rM8-th-Y5M"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="100" id="5hA-us-pLa"/>
+                                        <constraint firstItem="Why-cP-Kj3" firstAttribute="leading" secondItem="at1-1H-4GK" secondAttribute="leading" constant="16" id="DH3-PX-LsX"/>
+                                        <constraint firstAttribute="trailing" secondItem="7Wb-rX-CLS" secondAttribute="trailing" constant="16" id="Him-ei-54Y"/>
+                                        <constraint firstItem="lpB-aI-TPz" firstAttribute="top" secondItem="at1-1H-4GK" secondAttribute="top" constant="57" id="Lrg-h0-hnP"/>
+                                        <constraint firstItem="lpB-aI-TPz" firstAttribute="centerX" secondItem="at1-1H-4GK" secondAttribute="centerX" id="ayb-U1-OYc"/>
+                                        <constraint firstItem="7Wb-rX-CLS" firstAttribute="centerY" secondItem="lpB-aI-TPz" secondAttribute="centerY" id="ndF-7F-gbJ"/>
+                                        <constraint firstItem="lpB-aI-TPz" firstAttribute="centerY" secondItem="Why-cP-Kj3" secondAttribute="centerY" id="zPA-aX-EGd"/>
+                                        <constraint firstItem="Why-cP-Kj3" firstAttribute="top" secondItem="at1-1H-4GK" secondAttribute="top" constant="60" id="zU2-rV-TRM"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="GF8-VV-Te7">
+                                    <rect key="frame" x="16" y="130" width="382" height="498"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="iEx-Cg-LW3">
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="102"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="سبب خصم النقاط" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0o-Kk-kCD">
+                                                    <rect key="frame" x="0.0" y="0.0" width="382" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="42" id="dxh-lt-Wsf"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
+                                                    <color key="textColor" name="7966FD"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zhj-YM-lyw" customClass="AuthTextFieldView" customModule="ExcellentApp" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="46" width="382" height="56"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter the child's name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N0x-3t-nEE">
+                                                            <rect key="frame" x="16" y="4" width="354" height="48"/>
+                                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="13"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="56" id="1In-mc-MpK"/>
+                                                        <constraint firstItem="N0x-3t-nEE" firstAttribute="top" secondItem="zhj-YM-lyw" secondAttribute="top" constant="4" id="fCN-eS-SQC"/>
+                                                        <constraint firstAttribute="bottom" secondItem="N0x-3t-nEE" secondAttribute="bottom" constant="4" id="l7C-8U-1a3"/>
+                                                        <constraint firstItem="N0x-3t-nEE" firstAttribute="leading" secondItem="zhj-YM-lyw" secondAttribute="leading" constant="16" id="oe2-xx-8eH"/>
+                                                        <constraint firstAttribute="trailing" secondItem="N0x-3t-nEE" secondAttribute="trailing" constant="12" id="vy6-TF-7CT"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="سبب خصم النقاط" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H19-OK-Fui">
+                                            <rect key="frame" x="0.0" y="117" width="382" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="2rD-lo-NLc"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="12"/>
+                                            <color key="textColor" systemColor="systemRedColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="fla-aq-LFu">
+                                            <rect key="frame" x="0.0" y="147" width="382" height="102"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhL-1Z-BhF">
+                                                    <rect key="frame" x="0.0" y="0.0" width="382" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="42" id="1M1-df-Tzz"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
+                                                    <color key="textColor" name="7966FD"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mWt-se-MUv" customClass="AuthTextFieldView" customModule="ExcellentApp" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="46" width="382" height="56"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter the number of points" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eid-yM-vvR">
+                                                            <rect key="frame" x="16" y="4" width="354" height="48"/>
+                                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="13"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="ASCIICapableNumberPad"/>
+                                                        </textField>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="Eid-yM-vvR" secondAttribute="trailing" constant="12" id="SId-v0-tAN"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Eid-yM-vvR" secondAttribute="bottom" constant="4" id="n22-27-fP6"/>
+                                                        <constraint firstAttribute="height" constant="56" id="nNB-oM-nF5"/>
+                                                        <constraint firstItem="Eid-yM-vvR" firstAttribute="top" secondItem="mWt-se-MUv" secondAttribute="top" constant="4" id="ro2-FI-cEp"/>
+                                                        <constraint firstItem="Eid-yM-vvR" firstAttribute="leading" secondItem="mWt-se-MUv" secondAttribute="leading" constant="16" id="wMb-FU-K4G"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="سبب خصم النقاط" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbp-qx-6eq">
+                                            <rect key="frame" x="0.0" y="264" width="382" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="b2m-3z-tgA"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="12"/>
+                                            <color key="textColor" systemColor="systemRedColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="tD2-0V-Mzw">
+                                            <rect key="frame" x="0.0" y="294" width="382" height="102"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="حدد الاطفال" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAd-Uu-G4g">
+                                                    <rect key="frame" x="0.0" y="0.0" width="382" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="42" id="vd9-mk-dM6"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
+                                                    <color key="textColor" name="7966FD"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QK2-kG-ewD" customClass="AuthTextFieldView" customModule="ExcellentApp" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="46" width="382" height="56"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter the number of points" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eG0-L4-Z6B">
+                                                            <rect key="frame" x="16" y="4" width="324" height="48"/>
+                                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="13"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="ASCIICapableNumberPad"/>
+                                                        </textField>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buttomArrow" translatesAutoresizingMaskIntoConstraints="NO" id="Sgj-uq-OsE">
+                                                            <rect key="frame" x="344" y="13" width="30" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="B7o-lL-KPg"/>
+                                                                <constraint firstAttribute="width" constant="30" id="K3o-f8-hEa"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVj-kZ-sMr">
+                                                            <rect key="frame" x="0.0" y="0.0" width="382" height="56"/>
+                                                            <connections>
+                                                                <action selector="selectChildAction:" destination="-1" eventType="touchUpInside" id="fst-TO-pvI"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="eG0-L4-Z6B" secondAttribute="bottom" constant="4" id="0Zc-EP-suz"/>
+                                                        <constraint firstItem="Sgj-uq-OsE" firstAttribute="centerY" secondItem="QK2-kG-ewD" secondAttribute="centerY" id="3GT-O6-Fdb"/>
+                                                        <constraint firstItem="eG0-L4-Z6B" firstAttribute="top" secondItem="QK2-kG-ewD" secondAttribute="top" constant="4" id="4l4-iy-cHt"/>
+                                                        <constraint firstItem="eG0-L4-Z6B" firstAttribute="leading" secondItem="QK2-kG-ewD" secondAttribute="leading" constant="16" id="Ll2-RU-2vx"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Sgj-uq-OsE" secondAttribute="trailing" constant="8" id="PuY-LA-Tua"/>
+                                                        <constraint firstAttribute="trailing" secondItem="yVj-kZ-sMr" secondAttribute="trailing" id="Stn-rD-cxG"/>
+                                                        <constraint firstAttribute="bottom" secondItem="yVj-kZ-sMr" secondAttribute="bottom" id="X3d-rk-tbM"/>
+                                                        <constraint firstItem="yVj-kZ-sMr" firstAttribute="leading" secondItem="QK2-kG-ewD" secondAttribute="leading" id="fVk-Dd-vah"/>
+                                                        <constraint firstItem="Sgj-uq-OsE" firstAttribute="leading" secondItem="eG0-L4-Z6B" secondAttribute="trailing" constant="4" id="gsf-TU-I3h"/>
+                                                        <constraint firstItem="yVj-kZ-sMr" firstAttribute="top" secondItem="QK2-kG-ewD" secondAttribute="top" id="i2F-2F-Djc"/>
+                                                        <constraint firstAttribute="height" constant="56" id="oQC-pI-Ob6"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="سبب خصم النقاط" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcu-nY-V8H">
+                                            <rect key="frame" x="0.0" y="411" width="382" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="gnI-Ol-Kia"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="12"/>
+                                            <color key="textColor" systemColor="systemRedColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vzd-KO-V6d" customClass="CornerButton" customModule="ExcellentApp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="441" width="382" height="57"/>
+                                            <color key="backgroundColor" name="7966FD"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="57" id="UFb-gg-KK2"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="16"/>
+                                            <state key="normal" title="Next">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="awardAction:" destination="-1" eventType="touchUpInside" id="Jit-Zb-bji"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الخصم السابقة" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1d8-dG-5h0">
+                                    <rect key="frame" x="16" y="640" width="95.5" height="42"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="42" id="Ioq-DN-M22"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
+                                    <color key="textColor" name="7966FD"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CwS-yr-hfl">
+                                    <rect key="frame" x="16" y="680" width="135.5" height="35"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image=" filter" translatesAutoresizingMaskIntoConstraints="NO" id="7Nk-fW-RnZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="29" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="29" id="KvM-PE-Dn5"/>
+                                                <constraint firstAttribute="height" constant="35" id="huU-ao-rCp"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="محمد عبد الواحد" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNx-Lz-4gB">
+                                            <rect key="frame" x="37" y="0.0" width="98.5" height="35"/>
+                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COW-4O-SdL">
+                                    <rect key="frame" x="16" y="680" width="135.5" height="35"/>
+                                    <connections>
+                                        <action selector="filterAction:" destination="-1" eventType="touchUpInside" id="67h-Hl-IMo"/>
+                                    </connections>
+                                </button>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VZy-kf-1Gk">
+                                    <rect key="frame" x="16" y="723" width="382" height="284"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </tableView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="CwS-yr-hfl" firstAttribute="top" secondItem="1d8-dG-5h0" secondAttribute="bottom" constant="-2" id="2yO-8g-aqZ"/>
+                                <constraint firstItem="VZy-kf-1Gk" firstAttribute="top" secondItem="CwS-yr-hfl" secondAttribute="bottom" constant="8" symbolic="YES" id="3aX-aW-WZ2"/>
+                                <constraint firstAttribute="trailing" secondItem="GF8-VV-Te7" secondAttribute="trailing" constant="16" id="3sX-gn-ea2"/>
+                                <constraint firstItem="VZy-kf-1Gk" firstAttribute="leading" secondItem="lRu-E7-bnq" secondAttribute="leading" constant="16" id="4jt-sr-585"/>
+                                <constraint firstAttribute="trailing" secondItem="VZy-kf-1Gk" secondAttribute="trailing" constant="16" id="7x8-gH-Jka"/>
+                                <constraint firstItem="GF8-VV-Te7" firstAttribute="top" secondItem="at1-1H-4GK" secondAttribute="bottom" constant="30" id="8bf-kr-cm2"/>
+                                <constraint firstItem="1d8-dG-5h0" firstAttribute="top" secondItem="GF8-VV-Te7" secondAttribute="bottom" constant="12" id="8hN-Qp-hHJ"/>
+                                <constraint firstItem="GF8-VV-Te7" firstAttribute="leading" secondItem="lRu-E7-bnq" secondAttribute="leading" constant="16" id="9ln-7y-gNw"/>
+                                <constraint firstItem="COW-4O-SdL" firstAttribute="bottom" secondItem="CwS-yr-hfl" secondAttribute="bottom" id="DEK-e5-g4X"/>
+                                <constraint firstItem="COW-4O-SdL" firstAttribute="trailing" secondItem="CwS-yr-hfl" secondAttribute="trailing" id="EWm-Nn-kX1"/>
+                                <constraint firstItem="1d8-dG-5h0" firstAttribute="leading" secondItem="lRu-E7-bnq" secondAttribute="leading" constant="16" id="Qa8-Sc-wnX"/>
+                                <constraint firstItem="at1-1H-4GK" firstAttribute="leading" secondItem="lRu-E7-bnq" secondAttribute="leading" id="Scw-b0-aXD"/>
+                                <constraint firstItem="at1-1H-4GK" firstAttribute="top" secondItem="lRu-E7-bnq" secondAttribute="top" id="TF1-lz-l3e"/>
+                                <constraint firstItem="COW-4O-SdL" firstAttribute="leading" secondItem="CwS-yr-hfl" secondAttribute="leading" id="TvF-uS-Jqf"/>
+                                <constraint firstAttribute="trailing" secondItem="at1-1H-4GK" secondAttribute="trailing" id="cnY-Ok-Q1Y"/>
+                                <constraint firstAttribute="bottom" secondItem="VZy-kf-1Gk" secondAttribute="bottom" id="jpY-BR-pFk"/>
+                                <constraint firstItem="COW-4O-SdL" firstAttribute="top" secondItem="CwS-yr-hfl" secondAttribute="top" id="qor-H3-1Ak"/>
+                                <constraint firstItem="CwS-yr-hfl" firstAttribute="leading" secondItem="lRu-E7-bnq" secondAttribute="leading" constant="16" id="w7c-6h-ZJJ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="lRu-E7-bnq" firstAttribute="leading" secondItem="cR6-mh-KBM" secondAttribute="leading" id="QFg-HF-0jG"/>
+                        <constraint firstItem="lRu-E7-bnq" firstAttribute="top" secondItem="cR6-mh-KBM" secondAttribute="top" id="Rfz-me-oh0"/>
+                        <constraint firstAttribute="trailing" secondItem="lRu-E7-bnq" secondAttribute="trailing" id="ZF2-kf-rYn"/>
+                        <constraint firstAttribute="bottom" secondItem="lRu-E7-bnq" secondAttribute="bottom" id="dDN-Wv-3iA"/>
+                        <constraint firstItem="lRu-E7-bnq" firstAttribute="height" secondItem="cR6-mh-KBM" secondAttribute="height" multiplier="1.01228" priority="250" constant="100" id="gKi-j1-qmz"/>
+                        <constraint firstItem="lRu-E7-bnq" firstAttribute="width" secondItem="cR6-mh-KBM" secondAttribute="width" id="nz9-to-Qnv"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vkR-vy-mqr"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="cR6-mh-KBM" firstAttribute="trailing" secondItem="vkR-vy-mqr" secondAttribute="trailing" id="AOV-Fg-08V"/>
+                <constraint firstItem="cR6-mh-KBM" firstAttribute="top" secondItem="kiH-Mg-5nY" secondAttribute="top" id="cQo-tc-Hej"/>
+                <constraint firstAttribute="bottom" secondItem="cR6-mh-KBM" secondAttribute="bottom" id="rY2-Rh-291"/>
+                <constraint firstItem="cR6-mh-KBM" firstAttribute="leading" secondItem="vkR-vy-mqr" secondAttribute="leading" id="sle-zs-05l"/>
+            </constraints>
+            <point key="canvasLocation" x="136.80000000000001" y="113.79310344827587"/>
+        </view>
+    </objects>
+    <resources>
+        <image name=" filter" width="34" height="34"/>
+        <image name="arrowsright" width="24" height="24"/>
+        <image name="buttomArrow" width="24" height="24"/>
+        <namedColor name="7966FD">
+            <color red="0.47499999403953552" green="0.40000000596046448" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="C01565">
+            <color red="0.75300002098083496" green="0.082000002264976501" blue="0.39599999785423279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

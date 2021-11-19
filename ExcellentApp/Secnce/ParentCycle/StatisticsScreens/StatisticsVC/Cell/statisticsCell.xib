@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="statisticsCell" customModule="ExcellentApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="moR-tr-9Ys" customClass="shadowView" customModule="ExcellentApp" customModuleProvider="target">
+                        <rect key="frame" x="4" y="4" width="142" height="142"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="angy" translatesAutoresizingMaskIntoConstraints="NO" id="X7Q-FU-Veb">
+                                <rect key="frame" x="41" y="16" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="331-aj-OSS"/>
+                                    <constraint firstAttribute="height" constant="60" id="Ff1-xD-0tx"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="سبب خصم النقاط" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daq-QR-kNy">
+                                <rect key="frame" x="12" y="88" width="118" height="42"/>
+                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="daq-QR-kNy" firstAttribute="top" secondItem="X7Q-FU-Veb" secondAttribute="bottom" constant="12" id="2vW-j2-fnu"/>
+                            <constraint firstItem="X7Q-FU-Veb" firstAttribute="top" secondItem="moR-tr-9Ys" secondAttribute="top" constant="16" id="HIa-P9-w4f"/>
+                            <constraint firstAttribute="trailing" secondItem="daq-QR-kNy" secondAttribute="trailing" constant="12" id="N6r-5U-W3c"/>
+                            <constraint firstAttribute="bottom" secondItem="daq-QR-kNy" secondAttribute="bottom" constant="12" id="S4e-uH-9iB"/>
+                            <constraint firstItem="X7Q-FU-Veb" firstAttribute="centerX" secondItem="moR-tr-9Ys" secondAttribute="centerX" id="Wd8-k9-hi1"/>
+                            <constraint firstItem="daq-QR-kNy" firstAttribute="leading" secondItem="moR-tr-9Ys" secondAttribute="leading" constant="12" id="spz-xz-CNy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="moR-tr-9Ys" secondAttribute="trailing" constant="4" id="EDb-r4-s3q"/>
+                <constraint firstItem="moR-tr-9Ys" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="aDH-Q5-IhB"/>
+                <constraint firstAttribute="bottom" secondItem="moR-tr-9Ys" secondAttribute="bottom" constant="4" id="dIa-6r-qQJ"/>
+                <constraint firstItem="moR-tr-9Ys" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="ogh-UU-kZE"/>
+            </constraints>
+            <size key="customSize" width="130" height="130"/>
+            <connections>
+                <outlet property="containerView" destination="moR-tr-9Ys" id="gGT-Ea-49c"/>
+                <outlet property="imageImg" destination="X7Q-FU-Veb" id="sqT-xL-9Ge"/>
+                <outlet property="titleLab" destination="daq-QR-kNy" id="XWo-sk-Dyq"/>
+            </connections>
+            <point key="canvasLocation" x="84.057971014492765" y="79.6875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="angy" width="57" height="54"/>
+    </resources>
+</document>

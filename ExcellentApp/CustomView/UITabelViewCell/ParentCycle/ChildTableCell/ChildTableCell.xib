@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="59" id="KGk-i7-Jjw" customClass="ChildTableCell" customModule="ExcellentApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TGz-2P-3aZ">
+                        <rect key="frame" x="4" y="4" width="312" height="51"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nN1-HB-mQG">
+                                <rect key="frame" x="16" y="15" width="280" height="21"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackEmptyCheck" translatesAutoresizingMaskIntoConstraints="NO" id="zEi-bu-x0K">
+                                        <rect key="frame" x="0.0" y="0.5" width="30" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="hYN-op-1Li"/>
+                                            <constraint firstAttribute="width" constant="30" id="wfa-Fz-aGp"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="select all" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaQ-44-b5O">
+                                        <rect key="frame" x="30" y="0.0" width="250" height="21"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
+                                        <color key="textColor" name="0C0A19"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nN1-HB-mQG" firstAttribute="centerY" secondItem="TGz-2P-3aZ" secondAttribute="centerY" id="CKd-Xp-MTg"/>
+                            <constraint firstItem="nN1-HB-mQG" firstAttribute="leading" secondItem="TGz-2P-3aZ" secondAttribute="leading" constant="16" id="OAL-s5-5Ga"/>
+                            <constraint firstItem="nN1-HB-mQG" firstAttribute="centerX" secondItem="TGz-2P-3aZ" secondAttribute="centerX" id="gsg-IR-1mf"/>
+                            <constraint firstAttribute="trailing" secondItem="nN1-HB-mQG" secondAttribute="trailing" constant="16" id="w7i-IH-8gs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="TGz-2P-3aZ" secondAttribute="bottom" constant="4" id="LCD-rT-pq9"/>
+                    <constraint firstItem="TGz-2P-3aZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="Rb5-Us-Zhf"/>
+                    <constraint firstAttribute="trailing" secondItem="TGz-2P-3aZ" secondAttribute="trailing" constant="4" id="fdF-ss-ueL"/>
+                    <constraint firstItem="TGz-2P-3aZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="rVd-4Y-phV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="checkBox" destination="zEi-bu-x0K" id="jeR-CT-UH9"/>
+                <outlet property="kidNameLab" destination="RaQ-44-b5O" id="CKm-bZ-Faa"/>
+            </connections>
+            <point key="canvasLocation" x="-146.37681159420291" y="-16.40625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="blackEmptyCheck" width="26" height="26"/>
+        <namedColor name="0C0A19">
+            <color red="0.046999998390674591" green="0.039000000804662704" blue="0.097999997437000275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

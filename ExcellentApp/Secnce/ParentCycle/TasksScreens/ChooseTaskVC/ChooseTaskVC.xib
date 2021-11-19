@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChooseTaskVC" customModule="ExcellentApp" customModuleProvider="target">
+            <connections>
+                <outlet property="activityBtn" destination="nEp-Rf-NQA" id="T5N-6y-IN5"/>
+                <outlet property="activityView" destination="7zP-KA-E26" id="oN7-cU-yIa"/>
+                <outlet property="chooseTaskLab" destination="0LQ-VE-Nfs" id="8ey-iY-Hlb"/>
+                <outlet property="containerVIew" destination="MWl-dR-f2d" id="4qY-Gm-GLn"/>
+                <outlet property="continueBtn" destination="uym-An-Iaj" id="XHU-AN-kaZ"/>
+                <outlet property="goalBtn" destination="EOZ-Ci-20c" id="bJV-6Z-KN2"/>
+                <outlet property="goalView" destination="Gsd-i2-dlU" id="C3j-He-Det"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MWl-dR-f2d">
+                    <rect key="frame" x="0.0" y="596" width="414" height="300"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Child Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0LQ-VE-Nfs">
+                            <rect key="frame" x="36" y="16" width="342" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="3A6-pq-CMS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
+                            <color key="textColor" name="7966FD"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uym-An-Iaj" customClass="CornerButton" customModule="ExcellentApp" customModuleProvider="target">
+                            <rect key="frame" x="36" y="151" width="342" height="57"/>
+                            <color key="backgroundColor" name="7966FD"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="57" id="Z6J-gb-TD3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="16"/>
+                            <state key="normal" title="Login">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="continueBtn:" destination="-1" eventType="touchUpInside" id="dC8-TR-Q3V"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="HcA-2f-VLL">
+                            <rect key="frame" x="16" y="82" width="382" height="50"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gsd-i2-dlU">
+                                    <rect key="frame" x="0.0" y="0.0" width="189" height="50"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOZ-Ci-20c">
+                                            <rect key="frame" x="0.0" y="0.0" width="189" height="50"/>
+                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
+                                            <connections>
+                                                <action selector="goalAction:" destination="-1" eventType="touchUpInside" id="Vh9-3B-4Uz"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" name="7966FD"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="EOZ-Ci-20c" secondAttribute="bottom" id="7d2-71-6dg"/>
+                                        <constraint firstItem="EOZ-Ci-20c" firstAttribute="top" secondItem="Gsd-i2-dlU" secondAttribute="top" id="9nj-Wy-BWp"/>
+                                        <constraint firstAttribute="trailing" secondItem="EOZ-Ci-20c" secondAttribute="trailing" id="jZ2-Lm-XEj"/>
+                                        <constraint firstItem="EOZ-Ci-20c" firstAttribute="leading" secondItem="Gsd-i2-dlU" secondAttribute="leading" id="mnh-VR-0oT"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zP-KA-E26">
+                                    <rect key="frame" x="193" y="0.0" width="189" height="50"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEp-Rf-NQA">
+                                            <rect key="frame" x="0.0" y="0.0" width="189" height="50"/>
+                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
+                                            <connections>
+                                                <action selector="activityAction:" destination="-1" eventType="touchUpInside" id="UZg-ZG-A9x"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" name="7966FD"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="nEp-Rf-NQA" secondAttribute="trailing" id="Ees-pd-Up6"/>
+                                        <constraint firstAttribute="height" constant="50" id="PD6-40-9L0"/>
+                                        <constraint firstAttribute="bottom" secondItem="nEp-Rf-NQA" secondAttribute="bottom" id="crc-4g-xaU"/>
+                                        <constraint firstItem="nEp-Rf-NQA" firstAttribute="top" secondItem="7zP-KA-E26" secondAttribute="top" id="gxZ-NI-E2D"/>
+                                        <constraint firstItem="nEp-Rf-NQA" firstAttribute="leading" secondItem="7zP-KA-E26" secondAttribute="leading" id="i7p-Ga-pS0"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="uym-An-Iaj" firstAttribute="top" secondItem="HcA-2f-VLL" secondAttribute="bottom" constant="19" id="AoZ-BK-pfB"/>
+                        <constraint firstItem="uym-An-Iaj" firstAttribute="leading" secondItem="MWl-dR-f2d" secondAttribute="leading" constant="36" id="BNz-US-ena"/>
+                        <constraint firstAttribute="height" constant="300" id="O0K-ye-NXk"/>
+                        <constraint firstItem="HcA-2f-VLL" firstAttribute="top" secondItem="0LQ-VE-Nfs" secondAttribute="bottom" constant="24" id="YRb-Zy-Dk5"/>
+                        <constraint firstItem="0LQ-VE-Nfs" firstAttribute="leading" secondItem="MWl-dR-f2d" secondAttribute="leading" constant="36" id="c18-NG-tKe"/>
+                        <constraint firstItem="uym-An-Iaj" firstAttribute="centerX" secondItem="MWl-dR-f2d" secondAttribute="centerX" id="dNN-Kr-piZ"/>
+                        <constraint firstItem="HcA-2f-VLL" firstAttribute="centerX" secondItem="MWl-dR-f2d" secondAttribute="centerX" id="i4N-rP-W0u"/>
+                        <constraint firstAttribute="trailing" secondItem="HcA-2f-VLL" secondAttribute="trailing" constant="16" id="pHe-8R-HWU"/>
+                        <constraint firstItem="0LQ-VE-Nfs" firstAttribute="top" secondItem="MWl-dR-f2d" secondAttribute="top" constant="16" id="vYs-7c-x7w"/>
+                        <constraint firstAttribute="trailing" secondItem="0LQ-VE-Nfs" secondAttribute="trailing" constant="36" id="xlQ-4m-iir"/>
+                        <constraint firstItem="HcA-2f-VLL" firstAttribute="leading" secondItem="MWl-dR-f2d" secondAttribute="leading" constant="16" id="xuY-aE-YpZ"/>
+                        <constraint firstAttribute="trailing" secondItem="uym-An-Iaj" secondAttribute="trailing" constant="36" id="zO5-bi-swS"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5u4-VM-jaQ">
+                    <rect key="frame" x="0.0" y="44" width="414" height="552"/>
+                    <connections>
+                        <action selector="dismiss:" destination="-1" eventType="touchUpInside" id="c8W-TX-hOe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.154488180770355" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="MWl-dR-f2d" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7Rz-P1-G74"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5u4-VM-jaQ" secondAttribute="trailing" id="L1E-ve-cJ5"/>
+                <constraint firstItem="MWl-dR-f2d" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="gTI-fw-Yku"/>
+                <constraint firstItem="5u4-VM-jaQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="mW1-ok-ddU"/>
+                <constraint firstItem="5u4-VM-jaQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="o9l-br-bKm"/>
+                <constraint firstAttribute="bottom" secondItem="MWl-dR-f2d" secondAttribute="bottom" id="pYY-RF-BRk"/>
+                <constraint firstItem="MWl-dR-f2d" firstAttribute="top" secondItem="5u4-VM-jaQ" secondAttribute="bottom" id="wa3-0a-a5a"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="105.80357142857143"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="7966FD">
+            <color red="0.47499999403953552" green="0.40000000596046448" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

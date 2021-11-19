@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SideMenuVC" customModule="ExcellentApp" customModuleProvider="target">
+            <connections>
+                <outlet property="backBtn" destination="PVw-yd-7aY" id="8yO-vU-rkJ"/>
+                <outlet property="sideMenuTabel" destination="yil-Th-dKJ" id="uNq-As-YHn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y1P-Xz-XM1">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="896"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="ap9-6G-4Me">
+                            <rect key="frame" x="82.5" y="63" width="135" height="92"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="135" id="cFe-fb-L1j"/>
+                                <constraint firstAttribute="height" constant="92" id="zpc-SS-zi4"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVw-yd-7aY">
+                            <rect key="frame" x="25" y="96.5" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="UaX-Tk-yDc"/>
+                                <constraint firstAttribute="height" constant="25" id="jlA-C7-GnB"/>
+                            </constraints>
+                            <state key="normal" image="arrowsLeft"/>
+                        </button>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yil-Th-dKJ">
+                            <rect key="frame" x="8" y="163" width="284" height="558"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="ap9-6G-4Me" firstAttribute="centerX" secondItem="Y1P-Xz-XM1" secondAttribute="centerX" id="EMo-tI-1x2"/>
+                        <constraint firstItem="ap9-6G-4Me" firstAttribute="top" secondItem="Y1P-Xz-XM1" secondAttribute="top" constant="63" id="MgF-29-oTd"/>
+                        <constraint firstItem="yil-Th-dKJ" firstAttribute="top" secondItem="ap9-6G-4Me" secondAttribute="bottom" constant="8" symbolic="YES" id="O5a-eT-g6r"/>
+                        <constraint firstAttribute="width" constant="300" id="YYM-fl-RYz"/>
+                        <constraint firstItem="PVw-yd-7aY" firstAttribute="centerY" secondItem="ap9-6G-4Me" secondAttribute="centerY" id="brM-PZ-2es"/>
+                        <constraint firstItem="yil-Th-dKJ" firstAttribute="leading" secondItem="Y1P-Xz-XM1" secondAttribute="leading" constant="8" id="caz-sL-vvS"/>
+                        <constraint firstAttribute="bottom" secondItem="yil-Th-dKJ" secondAttribute="bottom" constant="175" id="eDT-rd-q0J"/>
+                        <constraint firstAttribute="trailing" secondItem="yil-Th-dKJ" secondAttribute="trailing" constant="8" id="ffX-TY-JXV"/>
+                        <constraint firstItem="PVw-yd-7aY" firstAttribute="leading" secondItem="Y1P-Xz-XM1" secondAttribute="leading" constant="25" id="hj8-cN-HGd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.45000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Y1P-Xz-XM1" secondAttribute="bottom" id="Bjq-Cq-tFX"/>
+                <constraint firstItem="Y1P-Xz-XM1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KCZ-3e-uLz"/>
+                <constraint firstItem="Y1P-Xz-XM1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="syc-gq-ULO"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Logo" width="132" height="153.5"/>
+        <image name="arrowsLeft" width="25" height="25"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

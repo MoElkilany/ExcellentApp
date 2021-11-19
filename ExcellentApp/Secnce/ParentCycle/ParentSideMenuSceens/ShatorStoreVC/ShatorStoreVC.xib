@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShatorStoreVC" customModule="ExcellentApp" customModuleProvider="target">
+            <connections>
+                <outlet property="activeShatorLab" destination="res-Fi-ev1" id="eK6-qi-xnC"/>
+                <outlet property="advantagesShatorStoreLab" destination="9Mb-50-ciB" id="CFJ-fy-MhK"/>
+                <outlet property="backBtn" destination="Mc5-zr-37k" id="j3B-U4-p5L"/>
+                <outlet property="shatorStoreLab" destination="hvb-nf-9SQ" id="mMg-wL-9Kv"/>
+                <outlet property="stroeSwitchBtn" destination="ohF-n5-RZq" id="616-e0-JYQ"/>
+                <outlet property="view" destination="yfZ-CX-pVk" id="Sj1-QG-7PC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="yfZ-CX-pVk">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oer-kf-Xz7" customClass="shadowViewWithoutCorner" customModule="ExcellentApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mc5-zr-37k">
+                            <rect key="frame" x="16" y="60" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="XRT-97-Rd1"/>
+                                <constraint firstAttribute="width" constant="30" id="rAN-jq-Yzr"/>
+                            </constraints>
+                            <state key="normal" image="arrowsright"/>
+                            <connections>
+                                <action selector="dismissActionBtn:" destination="-1" eventType="touchUpInside" id="1Z0-BU-5jv"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvb-nf-9SQ">
+                            <rect key="frame" x="78" y="57" width="219" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="8un-3H-zDQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="15"/>
+                            <color key="textColor" name="7966FD"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="hvb-nf-9SQ" firstAttribute="top" secondItem="oer-kf-Xz7" secondAttribute="top" constant="57" id="0ZQ-6f-OER"/>
+                        <constraint firstItem="Mc5-zr-37k" firstAttribute="leading" secondItem="oer-kf-Xz7" secondAttribute="leading" constant="16" id="7zc-aL-5m3"/>
+                        <constraint firstAttribute="height" constant="100" id="ALh-p8-qwl"/>
+                        <constraint firstItem="hvb-nf-9SQ" firstAttribute="leading" secondItem="Mc5-zr-37k" secondAttribute="trailing" constant="32" id="BKj-I5-z9i"/>
+                        <constraint firstItem="hvb-nf-9SQ" firstAttribute="centerY" secondItem="Mc5-zr-37k" secondAttribute="centerY" id="IVT-8C-Z5P"/>
+                        <constraint firstItem="hvb-nf-9SQ" firstAttribute="centerX" secondItem="oer-kf-Xz7" secondAttribute="centerX" id="Y4c-Wg-rp1"/>
+                        <constraint firstItem="Mc5-zr-37k" firstAttribute="top" secondItem="oer-kf-Xz7" secondAttribute="top" constant="60" id="txx-RU-5pT"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="من مميزات تطبيق شطور النسخة البريميوم   هو إمكانية تفعيل متجر شطور  للطفل" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Mb-50-ciB">
+                    <rect key="frame" x="12" y="118" width="351" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="w05-pL-rdf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="15"/>
+                    <color key="textColor" name="0C0A19"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="wIM-TV-ugK">
+                    <rect key="frame" x="16" y="256" width="343" height="56"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="bcg-G3-xk7">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="56"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I9e-sY-DTc" customClass="AuthTextFieldView" customModule="ExcellentApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="56"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تفعيل متجر شطور" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="res-Fi-ev1">
+                                            <rect key="frame" x="12" y="4" width="238" height="48"/>
+                                            <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="14"/>
+                                            <color key="textColor" name="0C0A19"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ohF-n5-RZq">
+                                            <rect key="frame" x="262" y="12.5" width="51" height="31"/>
+                                            <connections>
+                                                <action selector="storeAction:" destination="-1" eventType="valueChanged" id="Ut5-3I-r7Q"/>
+                                            </connections>
+                                        </switch>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="res-Fi-ev1" firstAttribute="leading" secondItem="I9e-sY-DTc" secondAttribute="leading" constant="12" id="0NL-AE-izm"/>
+                                        <constraint firstItem="res-Fi-ev1" firstAttribute="top" secondItem="I9e-sY-DTc" secondAttribute="top" constant="4" id="2Zc-II-IFd"/>
+                                        <constraint firstAttribute="bottom" secondItem="res-Fi-ev1" secondAttribute="bottom" constant="4" id="5Un-Qx-xdN"/>
+                                        <constraint firstItem="res-Fi-ev1" firstAttribute="top" secondItem="I9e-sY-DTc" secondAttribute="top" constant="4" id="GTm-Nr-pBp"/>
+                                        <constraint firstItem="ohF-n5-RZq" firstAttribute="leading" secondItem="res-Fi-ev1" secondAttribute="trailing" constant="12" id="NaK-eI-kcq"/>
+                                        <constraint firstAttribute="bottom" secondItem="res-Fi-ev1" secondAttribute="bottom" constant="4" id="ToQ-UO-nZI"/>
+                                        <constraint firstItem="ohF-n5-RZq" firstAttribute="centerY" secondItem="I9e-sY-DTc" secondAttribute="centerY" id="Vqd-TQ-cky"/>
+                                        <constraint firstAttribute="height" constant="56" id="g7h-Zo-gOC"/>
+                                        <constraint firstAttribute="trailing" secondItem="ohF-n5-RZq" secondAttribute="trailing" constant="32" id="jsC-bY-p6Z"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="I9e-sY-DTc" firstAttribute="leading" secondItem="bcg-G3-xk7" secondAttribute="leading" id="QuD-DT-tGD"/>
+                                <constraint firstAttribute="trailing" secondItem="I9e-sY-DTc" secondAttribute="trailing" id="Yqd-MH-Wp2"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shatorStore" translatesAutoresizingMaskIntoConstraints="NO" id="0cG-bJ-EIy">
+                    <rect key="frame" x="0.0" y="412" width="375" height="255"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="o8r-fM-For"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="wIM-TV-ugK" firstAttribute="top" secondItem="9Mb-50-ciB" secondAttribute="bottom" constant="38" id="9MX-0W-Vbn"/>
+                <constraint firstItem="oer-kf-Xz7" firstAttribute="leading" secondItem="o8r-fM-For" secondAttribute="leading" id="IBT-ge-Opa"/>
+                <constraint firstItem="wIM-TV-ugK" firstAttribute="centerX" secondItem="yfZ-CX-pVk" secondAttribute="centerX" id="NRD-Na-JR1"/>
+                <constraint firstItem="wIM-TV-ugK" firstAttribute="leading" secondItem="o8r-fM-For" secondAttribute="leading" constant="16" id="OKa-D2-yed"/>
+                <constraint firstItem="0cG-bJ-EIy" firstAttribute="trailing" secondItem="o8r-fM-For" secondAttribute="trailing" id="QM1-zz-ZFU"/>
+                <constraint firstItem="oer-kf-Xz7" firstAttribute="trailing" secondItem="o8r-fM-For" secondAttribute="trailing" id="REF-QQ-vXy"/>
+                <constraint firstItem="9Mb-50-ciB" firstAttribute="top" secondItem="oer-kf-Xz7" secondAttribute="bottom" constant="18" id="U4g-LC-cx0"/>
+                <constraint firstItem="o8r-fM-For" firstAttribute="trailing" secondItem="9Mb-50-ciB" secondAttribute="trailing" constant="12" id="aef-Fn-C09"/>
+                <constraint firstItem="9Mb-50-ciB" firstAttribute="centerX" secondItem="yfZ-CX-pVk" secondAttribute="centerX" id="bws-On-QLz"/>
+                <constraint firstItem="oer-kf-Xz7" firstAttribute="top" secondItem="yfZ-CX-pVk" secondAttribute="top" id="ncS-sw-5RK"/>
+                <constraint firstItem="o8r-fM-For" firstAttribute="trailing" secondItem="wIM-TV-ugK" secondAttribute="trailing" constant="16" id="pTa-wl-ngO"/>
+                <constraint firstItem="0cG-bJ-EIy" firstAttribute="leading" secondItem="o8r-fM-For" secondAttribute="leading" id="vWh-ET-hqD"/>
+                <constraint firstItem="9Mb-50-ciB" firstAttribute="leading" secondItem="o8r-fM-For" secondAttribute="leading" constant="12" id="zd4-97-cIW"/>
+                <constraint firstAttribute="bottom" secondItem="0cG-bJ-EIy" secondAttribute="bottom" id="zsc-0a-NNf"/>
+            </constraints>
+            <point key="canvasLocation" x="42.028985507246382" y="105.80357142857143"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrowsright" width="24" height="24"/>
+        <image name="shatorStore" width="343.5" height="255"/>
+        <namedColor name="0C0A19">
+            <color red="0.046999998390674591" green="0.039000000804662704" blue="0.097999997437000275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="7966FD">
+            <color red="0.47499999403953552" green="0.40000000596046448" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
